@@ -1,0 +1,26 @@
+Experiment : exp6_top5_task_level
+Split mode : group (5-fold GroupKFold)
+Categories : Short | Normal | Long
+Evaluated  : 81 subjects (majority vote)
+N features : 15
+
+Accuracy        : 0.6049
+F1 (macro)      : 0.3752
+F1 (weighted)   : 0.5454
+
+Classification report:
+              precision    recall  f1-score   support
+
+       Short       0.62      0.30      0.40        27
+      Normal       0.61      0.89      0.73        46
+        Long       0.00      0.00      0.00         8
+
+    accuracy                           0.60        81
+   macro avg       0.41      0.40      0.38        81
+weighted avg       0.55      0.60      0.55        81
+
+Confusion matrix (rows=actual, cols=predicted):
+Labels: ['Short', 'Normal', 'Long']
+[[ 8 19  0]
+ [ 4 41  1]
+ [ 1  7  0]]

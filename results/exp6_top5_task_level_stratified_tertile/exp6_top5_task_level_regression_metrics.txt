@@ -1,0 +1,9 @@
+Experiment : exp6_top5_task_level
+Split mode : stratified (5-fold StratifiedKFold)
+Evaluated  : 388 rows (row-level evaluation)
+N features : 15
+
+Null baseline RMSE : 0.7755 h
+RF model RMSE      : 0.5910 h
+RF model MAE       : 0.4779 h
+RF model R²        : 0.4193

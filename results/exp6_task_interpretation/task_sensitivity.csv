@@ -1,0 +1,16 @@
+Task,Actual_class,N_subjects,Correct,Accuracy,Pred_Short,Pred_Normal,Pred_Long
+gyrus_coord,Short,25,14,0.56,14,11,0
+gyrus_coord,Normal,43,36,0.837,7,36,0
+gyrus_coord,Long,8,1,0.125,1,6,1
+gyrus_left_closed_eyes,Short,25,13,0.52,13,12,0
+gyrus_left_closed_eyes,Normal,44,41,0.932,3,41,0
+gyrus_left_closed_eyes,Long,8,3,0.375,0,5,3
+gyrus_right_closed_eyes,Short,25,12,0.48,12,13,0
+gyrus_right_closed_eyes,Normal,44,39,0.886,3,39,2
+gyrus_right_closed_eyes,Long,8,3,0.375,0,5,3
+prefrontal1,Short,27,16,0.593,16,11,0
+prefrontal1,Normal,43,41,0.953,2,41,0
+prefrontal1,Long,8,5,0.625,0,3,5
+prefrontal2,Short,27,15,0.556,15,11,1
+prefrontal2,Normal,45,40,0.889,4,40,1
+prefrontal2,Long,8,1,0.125,1,6,1
