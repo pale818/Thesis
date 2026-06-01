@@ -1,26 +1,26 @@
 Experiment : exp6_top5_task_level
 Split mode : stratified (5-fold StratifiedKFold)
 Categories : Short | Normal | Long
-Evaluated  : 388 rows (row-level evaluation)
+Evaluated  : 398 rows (row-level evaluation)
 N features : 15
 
-Accuracy        : 0.6959
-F1 (macro)      : 0.6785
-F1 (weighted)   : 0.6893
+Accuracy        : 0.6935
+F1 (macro)      : 0.6747
+F1 (weighted)   : 0.6877
 
 Classification report:
               precision    recall  f1-score   support
 
-       Short       0.69      0.86      0.76       166
-      Normal       0.68      0.58      0.63       129
-        Long       0.75      0.57      0.65        93
+       Short       0.69      0.84      0.76       166
+      Normal       0.73      0.61      0.66       134
+        Long       0.67      0.55      0.60        98
 
-    accuracy                           0.70       388
-   macro avg       0.70      0.67      0.68       388
-weighted avg       0.70      0.70      0.69       388
+    accuracy                           0.69       398
+   macro avg       0.69      0.67      0.67       398
+weighted avg       0.69      0.69      0.69       398
 
 Confusion matrix (rows=actual, cols=predicted):
 Labels: ['Short', 'Normal', 'Long']
-[[142  18   6]
- [ 42  75  12]
- [ 23  17  53]]
+[[140  16  10]
+ [ 35  82  17]
+ [ 29  15  54]]

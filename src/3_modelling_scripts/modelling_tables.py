@@ -5,12 +5,10 @@ import os
 df = pd.read_csv('pilot_files/all_task_ready.csv')
 pow_cols = [c for c in df.columns if c.startswith('POW.')]
 
-# ── Held-out subjects (reserved for thesis defense demo) ─────────────────────
-# ba16 (Long sleeper) and ba45 (Normal sleeper) are excluded from all experiments.
-# Use train_final_model.py + predict.py on these two at the defense.
-HELD_OUT = ['BA16', 'BA45']
+# ── All subjects included (demo no longer required) ───────────────────────────
+HELD_OUT = []  # ba16 and ba45 now included in modelling (n=83)
 df = df[~df['Subject_ID'].isin(HELD_OUT)]
-print(f'Held out: {HELD_OUT} — training on {df["Subject_ID"].nunique()} subjects')
+print(f'Training on {df["Subject_ID"].nunique()} subjects')
 
 OUTPUT_DIR = 'modelling_tables'
 os.makedirs(OUTPUT_DIR, exist_ok=True)

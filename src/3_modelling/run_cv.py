@@ -45,9 +45,9 @@ from sklearn.metrics import (mean_squared_error, mean_absolute_error, r2_score,
 from pathlib import Path
 
 # ── SETTINGS — change these ───────────────────────────────────────────────────
-EXPERIMENT = 'exp1_fft_only'   # ← change to switch experiments
+EXPERIMENT = 'exp3_task_specific'   # ← change to switch experiments
 K          = 5                  # ← number of folds (3 or 5)
-CAT_MODE   = 'fixed'            # ← 'fixed'   = ≤6h / >6–8h / ≥8h  (current thresholds)
+CAT_MODE   = 'tertile'            # ← 'fixed'   = ≤6h / >6–8h / ≥8h  (current thresholds)
                                 #    'tertile' = data-driven tertile thresholds
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -94,7 +94,7 @@ print(f"Categories  — {dict(zip(*np.unique(y_cat, return_counts=True)))}")
 # most important features (ranked by RF trained on the full dataset).
 # Note: feature importance is computed on all data before CV — this is a
 # slight optimistic bias but acceptable for exploratory/thesis work.
-TOP_N = None   # ← change to e.g. 15 to enable feature selection
+TOP_N = 15   # ← change to e.g. 15 to enable feature selection
 
 if TOP_N is not None:
     print(f"\nSelecting top {TOP_N} features...")

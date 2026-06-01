@@ -35,7 +35,7 @@ import sys
 WINDOW_SIZE = 256        # rows per window for exp5 (128Hz × 2 sec = 256 rows)
 MIN_WINDOW_ROWS = 64     # skip windows with fewer rows than this (incomplete)
 
-HELD_OUT = ['ba16', 'ba45']   # held out for defense demo — excluded from both tables
+HELD_OUT = []   # ba16 and ba45 now included in modelling (n=83)
 # ─────────────────────────────────────────────────────────────────────────────
 
 # ── PATHS ─────────────────────────────────────────────────────────────────────

@@ -49,12 +49,12 @@ from pathlib import Path
 
 # ── SETTINGS — change these ───────────────────────────────────────────────────
 EXPERIMENT = 'exp6_top5_task_level'      # ← exp4 / exp5 / exp6_top5_task_level
-SPLIT_MODE = 'stratified'             # ← 'group' (GroupKFold + majority vote)
+SPLIT_MODE = 'group'             # ← 'group' (GroupKFold + majority vote)
                                       #    'stratified' (StratifiedKFold + row-level eval)
 K          = 5                        # ← number of folds
 TOP_N      = 15                           # ← None = all features, int = top-N by importance
 BINARY     = False                     # ← True = 2 groups (<7h vs >=7h) | False = 3 groups
-CAT_MODE   = 'fixed'                   # ← 'fixed'   = ≤6h / >6–8h / ≥8h  (current thresholds)
+CAT_MODE   = 'tertile'                   # ← 'fixed'   = ≤6h / >6–8h / ≥8h  (current thresholds)
                                        #    'tertile' = data-driven tertile thresholds
                                        #    (only applies when BINARY = False)
 # ─────────────────────────────────────────────────────────────────────────────
